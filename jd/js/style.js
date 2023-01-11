@@ -73,7 +73,7 @@ left_btn.addEventListener('click', function() {
         // 修改小图标的样式
         lis[3].className = 'cur'
     
-        // "出老千",迅速切换
+      
         setTimeout(function() {
             index = 3
             img_box.style.transition = '';
@@ -132,6 +132,8 @@ right_btn.addEventListener('mouseout', function() {
         nav.style.top = '0';
         nav.style.zIndex = '99'
         nav.style.display= 'block';
+        nav.style.transition = 'all,1.5s';
+
         
     } else {
         // 小于的时候让他恢复原状
@@ -141,8 +143,5 @@ right_btn.addEventListener('mouseout', function() {
 
 
 
-test.onclick = function(){
-    var top = document.body.scrollTop || document.documentElement.scrollTop
-     scrollBy(0,-top);
-     }
+
 

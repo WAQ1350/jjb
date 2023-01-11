@@ -12,6 +12,8 @@ a {
 }
 body {
   background-color: #f4f4f4;
+  background-image: url(../images/bg.webp)  center/cover;
+  
 }
 
 /* 解决浮动得影响 */
@@ -45,6 +47,9 @@ body {
   padding: 0 10px;
   font-size: 12px;
 }
+.links a {
+  font-size: 12px;
+}
 .address .icon-dingweixiao{
   color: #ff0000;
 } 
@@ -54,6 +59,7 @@ body {
 }
 .current-city {
   color: #999;
+  font-size: 12px;
 }
 .current-city:hover {
   color: #a12323;
@@ -122,6 +128,7 @@ color: #fff;
   width: 190px;
   height: 190px;
   background: url(../images/logo.jpg)  center/cover ;
+  
 }
 .logo-bak {
   float: left;
@@ -252,6 +259,8 @@ border-bottom: 2px solid red;
   height: 45px;
   line-height: 45px;
   border: none;
+  background-color: #fff;
+  border: 1px solid rgb(235, 232, 232);
  
 }
 .search-content-right-top button{
@@ -260,6 +269,8 @@ border-bottom: 2px solid red;
   line-height: 45px;
   border: none;
   margin-top: 3px;
+  background-color: #fff;
+  border: 1px solid rgb(235, 232, 232);
 }
 
 .search-content-right-top{
@@ -304,7 +315,8 @@ border: 1px solid red;
   width: 190px;
   height: 190px;
   background:url(../images/xn.webp) no-repeat  center/cover ;
-  background-size:  100px
+  background-size:  100px;
+  cursor: pointer;
 
 }
 
@@ -347,17 +359,16 @@ background-color: rgb(171, 170, 170);
   background-color: #ccc;
   margin-bottom: 10px;
 }
-.banner-right .item:nth-child(3) {
-  background: url(https://img13.360buyimg.com/babel/s380x300_jfs/t1/59540/27/23466/16765/639846afE7eceb967/362818bf669fcd50.png.webp) no-repeat center / cover;
-}
+
 .banner-right .item:nth-child(1) {
-  background: url(https://img12.360buyimg.com/babel/s380x300_jfs/t1/17389/4/20651/15583/63981e11E3c657de0/f340bd7c4f598d2e.png.webp)
-    no-repeat center / cover;
+  background: url(../images/right2.webp) no-repeat center / cover;
 }
 .banner-right .item:nth-child(2) {
   background: url(../images/p01.webp) no-repeat center / cover;
 }
-
+.banner-right .item:nth-child(3) {
+  background: url(../images/right3.webp) no-repeat center / cover;
+}
 /* 左侧个人面板 */
 .banner-other {
   float: left;
@@ -392,6 +403,9 @@ background-color: rgb(171, 170, 170);
 }
 .yewu li:hover .iconfont {
   color: #cf2222;
+}
+.iconfont {
+  font-size: 12px;
 }
 .yewu li:hover {
   color: #cf2222;
@@ -504,7 +518,7 @@ margin-right: 6px;
   position: relative;
   width: 590px;
   height: 480px;
-  /* 超出隐藏 */
+ 
   overflow: hidden;  
 
 }
@@ -513,7 +527,7 @@ ul.img_box {
   position: absolute;
   left: 0;
   top: 0;
-  /* html中的第一张图片不是我们想要显示，第二张才是我们轮播图的第一张图片因此要让这排图片往左移动一张图片的距离 */
+  
   transform: translateX(-590px);
 }
 
@@ -677,6 +691,9 @@ color: #fff;
   margin-left: 10px;
 
 }
+.goods-item-jd-right,.goods-item-jd-right2,.goods-item-jd-right3,.goods-item-jd-right4,.goods-item-jd-right5{
+  cursor: pointer;
+}
 .goods-item-jd-right5 h5{
   margin-left: 20px;
 }
@@ -700,7 +717,7 @@ color: #fff;
   border-radius: 40px;
   height: 20px;
   width: 85px;
-  margin-left: 40px;
+  margin-left: 50px;
   border: 1px solid red;
 }
 .goods-item-jd-right5 button:hover{
@@ -710,10 +727,10 @@ color: #fff;
 }
 /* 侧边栏 */
 .right-home ul li{
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
  
-    font-size: 14px;
+    font-size: 12px;
   background-color: #ffffff;
   position:relative;
   margin-left: 1400px;
@@ -727,6 +744,7 @@ color: #fff;
 .right-home span{
   position: relative;
   z-index: 3;
+  cursor: pointer;
 }
 #test{
   cursor: pointer;  /* 鼠标手型 */
@@ -734,5 +752,13 @@ color: #fff;
 #test:hover{
   color: #fff;
   background-color: #ff0000;
+  transition: all 0.5s;
+}
+.right-home ul li{
+  cursor: pointer;
+}
+.right-home ul li:hover{
+  background-color: #ff0000;
+  color: #fff;
   transition: all 0.5s;
 }
